@@ -1,0 +1,23 @@
+{
+  "name": "node-adaptative-replacement-cache",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "github.com/edasarl/node-adaptative-replacement-cache"
+  },
+  "description": "Implementation of the ARC algorithm for Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "contributors": [
+    {
+      "name": "Manuel Baclet",
+      "email": "manuel@edagames.com"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "fdll": "^0.0.1"
+  }
+}

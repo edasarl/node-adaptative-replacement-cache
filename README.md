@@ -7,6 +7,7 @@ or
 https://www.ipvs.uni-stuttgart.de/export/sites/default/ipvs/abteilungen/as/lehre/lehrveranstaltungen/vorlesungen/WS1415/material/ARC.pdf
 
 var cache = new ARC(3); //creates a cache of size 3.
+
 cache.on('eviction', function(key, val) {...}); //the cache emit an 'eviction' event when an element leaves the cache.
 
 #API

@@ -18,6 +18,6 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "fdll": "^0.0.1"
+    "fdll": "^0.0.2"
   }
 }

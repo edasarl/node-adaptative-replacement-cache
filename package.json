@@ -1,6 +1,6 @@
 {
   "name": "adaptative-replacement-cache",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "github.com/edasarl/node-adaptative-replacement-cache"

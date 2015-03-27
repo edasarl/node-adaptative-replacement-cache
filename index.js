@@ -38,7 +38,7 @@ ARC.prototype.get = function(key) {
 		this.t2.push(this.t1.remove(key));
 		return keyData.data;
 	}
-	keyData =this.t2.get(key);
+	keyData = this.t2.get(key);
 	if (keyData) {
 		if (keyData.data == null) return null;
 		this.t2.push(this.t2.remove(key));
@@ -53,7 +53,7 @@ ARC.prototype.peek = function(key) {
 	if (keyData) {
 		return keyData.data;
 	}
-	keyData =this.t2.get(key);
+	keyData = this.t2.get(key);
 	if (keyData) {
 		return keyData.data;
 	}
@@ -70,11 +70,11 @@ ARC.prototype.update = function(key, val) {
 	if (keyData) {
 		return this.t1.set(key, val);
 	}
-	keyData =this.t2.get(key);
+	keyData = this.t2.get(key);
 	if (keyData) {
 		return this.t2.set(key, val);
 	}
-	return new Error('key should be in cache');;
+	return new Error('key should be in cache');
 };
 
 ARC.prototype.set = function(key, val) {
@@ -85,7 +85,7 @@ ARC.prototype.set = function(key, val) {
 		return new Error('key should not be in cache');
 	}
 	//case II
-	keyData =this.b1.get(key);
+	keyData = this.b1.get(key);
 	if (keyData) {
 		var b1Length = this.b1.length();
 		var b2Length = this.b2.length();
@@ -98,7 +98,7 @@ ARC.prototype.set = function(key, val) {
 		return;
 	}
 	//case III
-	keyData =this.b2.get(key);
+	keyData = this.b2.get(key);
 	if (keyData) {
 		var b1Length = this.b1.length();
 		var b2Length = this.b2.length();
@@ -135,4 +135,4 @@ ARC.prototype.set = function(key, val) {
 		data: val
 	});
 	return;
-}
+};
